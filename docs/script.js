@@ -3,12 +3,12 @@ function openMovie(id) {
     window.location.assign(`docs/movie.html`);
 }
 
-// Show the loading spinner
+
 function showLoading() {
     document.getElementById('loading').style.display = 'block';
 }
 
-// Hide the loading spinner
+
 function hideLoading() {
     document.getElementById('loading').style.display = 'none';
 }
@@ -46,7 +46,7 @@ function searchSeries() {
         .finally(() => hideLoading());
 }
 
-// Display TV shows in the same format as the trending series
+
 function displayShows(shows) {
     const moviesContainer = document.getElementById('movies_name');
     moviesContainer.innerHTML = ''; // Clear previous results
@@ -63,7 +63,7 @@ function displayShows(shows) {
                 <h3>${show.name}</h3>
             </div>`;
         }
-        // Add the show class after the content is loaded for fade-in effect
+      
         setTimeout(() => {
             const elements = document.querySelectorAll('.fade-in');
             elements.forEach(el => el.classList.add('show'));

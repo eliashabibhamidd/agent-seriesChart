@@ -8,7 +8,7 @@ function fetchShowDetails() {
             document.getElementById('show_name').innerText = show.name;
             document.getElementById('overview').innerText = show.overview;
             
-            // Set the poster image
+
             document.getElementById('show_poster').src = `https://image.tmdb.org/t/p/w300${show.poster_path}`;
             document.getElementById('show_poster').alt = `${show.name} Poster`;
 
@@ -16,10 +16,9 @@ function fetchShowDetails() {
             document.getElementById('show_rating').innerText = seriesRating.toFixed(1);
             document.getElementById('show_rating').className = getRatingClass(seriesRating);
 
-            // Filter out the "Specials" season (season_number = 0)
+
             const filteredSeasons = show.seasons.filter(season => season.season_number !== 0);
 
-            // Display seasons and episodes directly
             filteredSeasons.forEach(season => {
                 document.getElementById('seasons').innerHTML += `
                 <div class="season">
@@ -27,7 +26,7 @@ function fetchShowDetails() {
                     <div id="episodes_${season.season_number}" class="episodes-container"></div>
                 </div>`;
                 
-                // Fetch and display episodes for this season
+
                 fetchEpisodes(season.season_number);
             });
         })
