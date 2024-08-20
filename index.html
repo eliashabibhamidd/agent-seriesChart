@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending TV Shows</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <div class="header">
+        <header>
+            <h1>ASC<sup>agent series <em>Chart</em></sup> </h1>
+
+        
+            
+    
+            <img src="https://img.icons8.com/?size=100&id=55nDozK3TT2M&format=png&color=000000" alt="">
+        </header>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search_input" placeholder="Search for TV series">
+        <button onclick="searchSeries()">Search</button>
+    </div>
+
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <div id="movies_name" class="fade-in"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
