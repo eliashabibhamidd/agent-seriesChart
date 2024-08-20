@@ -1,6 +1,6 @@
 function openMovie(id) {
     localStorage.setItem('selectedShowId', id);
-    window.location.assign(`/movie.html`);
+    window.location.assign(`docs/movie.html`);
 }
 
 // Show the loading spinner
