@@ -7,4 +7,4 @@ For any inquiries or feedback, feel free to reach out to me through the followin
 
 [telegram](http://t.me//eliashabibhamid)
 
-![series chart](../Trending%20TV%20Shows%20-%20Google%20Chrome%208_25_2024%205_52_49%20AM.png)
+![series chart](Trending%20TV%20Shows%20-%20Google%20Chrome%208_25_2024%205_52_49%20AM.png)
