@@ -6,3 +6,4 @@ Created to help a friend struggling with TV show choices, this site offers a qui
 For any inquiries or feedback, feel free to reach out to me through the following channels:
 
 [telegram](http://t.me//eliashabibhamid)
+
