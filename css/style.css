@@ -10,6 +10,35 @@ body {
 }
 
 
+
+.contact img {
+    position: fixed;
+    right: 0;
+    bottom: 5px;
+    opacity: 0.6;
+}
+
+.contact a {
+    position: fixed;
+    right: 90px;
+    bottom: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    opacity: 0.6;
+    font-weight: 400;
+}
+
+
+.contact img:hover {
+    opacity: 2;
+}
+
+.contact a:hover{
+    opacity: 2;
+    
+}
+
 .header {
     border-radius: 25px;
     background: linear-gradient(270deg, #2c3e50cb, #111, #2c3e50, #111);
@@ -87,23 +116,24 @@ em {
 }
 
 #search_input:focus::placeholder {
-    opacity: 0; /* Hide placeholder on focus */
-    transform: translateY(-10px); /* Optional: Move placeholder text up slightly */
+    opacity: 0; 
+    transform: translateY(-10px); 
 }
 
 .search-container button {
-    background: #1abc9c;
+    background: #1abc9cb0;
     border: none;
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
     transition: background 0.3s ease;
 }
 
 button:hover {
-    background: #16a085;
+    background: #16a08495;
 }
 
 #movies_name{
@@ -115,9 +145,9 @@ button:hover {
 .img-con img{
     cursor: pointer;
     width: 200px;
-    background: #fff; /* Light background for the item */
+    background: #fff; 
     border-radius: 8px; 
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 4px 25px rgba(0, 0, 0, 0.5); /* Dual shadow effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 4px 25px rgba(0, 0, 0, 0.5); 
     height: 300px;
 }   
 
@@ -169,21 +199,21 @@ button:hover {
 
 #show_details {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align content to the left */
+    flex-direction: column; 
+    align-items: flex-start; 
     padding: 20px;
-    max-width: 300px; /* Adjust width as needed */
-    margin: 0; /* Align the section to the left */
+    max-width: 300px; 
+    margin: 0; 
     position: absolute;
-    left: 20px; /* Adjust the left alignment as needed */
-    top: 20px; /* Adjust the top alignment as needed */
+    left: 20px; 
+    top: 20px;
 }
 
 #show_poster {
     border-radius: 8px;
     width: 100%;
-    height: auto; /* Keeps the aspect ratio */
-    margin-bottom: 15px; /* Space between poster and name */
+    height: auto; 
+    margin-bottom: 15px; 
 }
 
 #show_name {
@@ -199,7 +229,7 @@ button:hover {
     font-size: 2rem;
     padding: 5px 10px;
     border-radius: 5px;
-    margin-bottom: 15px; /* Space between rating and overview */
+    margin-bottom: 15px; 
 
 }
 #show_details p {
@@ -226,9 +256,9 @@ button:hover {
 
 @media (max-width: 768px) {
             #show_details {
-                max-width: 100px; /* Full width on smaller screens */
+                max-width: 100px; 
                 padding: 10px;
-                position: relative; /* Adjust for smaller screens */
+                position: relative; 
                 left: 0;
                 top: 0;
             }
@@ -426,6 +456,16 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+
+    .contact img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact a {
+        font-size: 1rem;
+        right: 65px;
+    }
 
     .ratings-container {
         height: 10px;
